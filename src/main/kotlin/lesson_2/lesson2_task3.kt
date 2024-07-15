@@ -1,9 +1,9 @@
 package org.example.lesson_2
 
 fun main() {
-    var hour: Byte = 9
-    var minute: Byte = 39
-    var travelTime: Short = 457
+    val hour: Byte = 9
+    val minute: Byte = 39
+    val travelTime: Short = 457
 
     val departureTimeInMinutes: Int = 9 * 60 + 39
     val totalTime: Int = departureTimeInMinutes + travelTime
