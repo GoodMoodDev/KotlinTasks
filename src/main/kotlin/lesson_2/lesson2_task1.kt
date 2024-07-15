@@ -1,13 +1,14 @@
 package org.example.lesson_2
 
 fun main() {
-    var a: Byte = 3
-    var b: Byte = 4
-    var c: Byte = 3
-    var d: Byte = 5
+    val student1: Byte = 3
+    val student2: Byte = 4
+    val student3: Byte = 3
+    val student4: Byte = 5
+    val numberOfStudents: Float = 4f
 
-    var count1: Int = a + b + c + d
-    var count2: Float = count1 / 4f
+    val count1: Int = student1 + student2 + student3 + student4
+    val count2: Float = count1 / numberOfStudents
 
     println(count2)
 }
