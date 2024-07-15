@@ -1,10 +1,10 @@
 package org.example.lesson_2
 
 fun main() {
-    var worker: Byte = 50
-    var workerSalary: Short = 30000
-    var intern: Byte = 30
-    var internSalary: Short = 20000
+    val worker: Byte = 50
+    val workerSalary: Short = 30000
+    val intern: Byte = 30
+    val internSalary: Short = 20000
 
     val costsOnWorkers: Int = worker * workerSalary
     val costsOnInterns: Int = intern * internSalary
