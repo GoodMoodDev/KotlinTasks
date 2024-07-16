@@ -1,15 +1,15 @@
 package org.example.lesson_2
 
 fun main() {
-    var crystalOre: Byte = 7
-    var metalOre: Byte = 11
-    var buffPercent: Byte = 20
+    val crystalOre: Byte = 7
+    val metalOre: Byte = 11
+    val buffPercent: Byte = 20
     val coeffPercent: Double = buffPercent / 100.0 + 1
     val buffCrystal: Double = crystalOre * coeffPercent
     val buffMetal: Double = metalOre * coeffPercent
 
-    var results = """
-        Cystal ore mined = $buffCrystal
+    val results = """
+        Crystal ore mined = $buffCrystal
         Metal ore mined = $buffMetal
     """.trimIndent()
 
