@@ -7,8 +7,8 @@ fun main() {
     val student4: Byte = 5
     val numberOfStudents: Float = 4f
 
-    val count1: Int = student1 + student2 + student3 + student4
-    val count2: Float = count1 / numberOfStudents
+    val totalNumberOfStudents: Int = student1 + student2 + student3 + student4
+    val classAverage: Float = totalNumberOfStudents / numberOfStudents
 
-    println(count2)
+    println(classAverage)
 }
