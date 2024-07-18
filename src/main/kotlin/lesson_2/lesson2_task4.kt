@@ -4,16 +4,16 @@ fun main() {
     val crystalOre: Byte = 7
     val metalOre: Byte = 11
     val buffPercent: Byte = 20
-    val hundredPercent: Double = 100.0
+    val hundredPercent: Float = 100f
 
-    val crystalBuffPercent = crystalOre / hundredPercent * buffPercent + crystalOre
-    val metalBuffPercent = metalOre / hundredPercent * buffPercent + metalOre
-    val crystalBuffResult = crystalBuffPercent.toInt()
-    val metalBuffResult = metalBuffPercent.toInt()
+    val bonusCrystalOre: Float = crystalOre / hundredPercent * buffPercent
+    val bonusMetalOre: Float = metalOre / hundredPercent * buffPercent
+    val roundedAmountOfCrystalOre = bonusCrystalOre.toInt()
+    val roundedAmountOfMetalOre = bonusMetalOre.toInt()
 
     val results = """
-        Crystal ore mined = $crystalBuffResult
-        Metal ore mined = $metalBuffResult
+        Bonus crystal ore from the mining buff = $roundedAmountOfCrystalOre
+        Bonus metal ore from the mining buff = $roundedAmountOfMetalOre
     """.trimIndent()
 
     println(results)
