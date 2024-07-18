@@ -8,12 +8,10 @@ fun main() {
 
     val bonusCrystalOre: Float = crystalOre / hundredPercent * buffPercent
     val bonusMetalOre: Float = metalOre / hundredPercent * buffPercent
-    val roundedAmountOfCrystalOre = bonusCrystalOre.toInt()
-    val roundedAmountOfMetalOre = bonusMetalOre.toInt()
 
     val results = """
-        Bonus crystal ore from the mining buff = $roundedAmountOfCrystalOre
-        Bonus metal ore from the mining buff = $roundedAmountOfMetalOre
+        Bonus crystal ore from the mining buff = ${bonusCrystalOre.toInt()}
+        Bonus metal ore from the mining buff = ${bonusMetalOre.toInt()}
     """.trimIndent()
 
     println(results)
