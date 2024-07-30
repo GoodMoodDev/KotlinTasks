@@ -11,7 +11,7 @@ fun main() {
         Упражнения для рук: $isArmAndAbsDay
         Упражнения для ног: $isLegAndBackDay
         Упражнения для спины: $isLegAndBackDay
-        Упражнения для прессаЖ $isArmAndAbsDay
+        Упражнения для пресса: $isArmAndAbsDay
     """.trimIndent()
 
     println(output)
